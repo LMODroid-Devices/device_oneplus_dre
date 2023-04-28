@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dre/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_dre
+PRODUCT_NAME := lmodroid_dre
 PRODUCT_DEVICE := dre
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
