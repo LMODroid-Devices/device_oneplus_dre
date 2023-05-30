@@ -3,10 +3,18 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+cc_library_static {
+    name: "libinit_oplus",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_oplus.cpp"],
+}
+
 prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
     vendor: true,
+    vendor_ramdisk_available: true,
 }
 
 prebuilt_etc {
